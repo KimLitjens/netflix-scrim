@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch } from 'react-router-dom';
 import { Route } from 'react-router-dom';
+import Home from './pages/home'
 
 export function App() {
     return (
@@ -16,7 +17,7 @@ export function App() {
                     <p>I will be the browse page</p>
                 </Route>
                 <Route path="/">
-                    <h1>My clonded Netflix application</h1>
+                    <Home />
                 </Route>
             </Switch>
         </Router>
