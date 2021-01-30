@@ -1,11 +1,24 @@
+import React from 'react';
+import { BrowserRouter as Router, Switch } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
-import './App.css';
-
-function App() {
-  return (
-    <div>
-      <h1>My Netflix Start</h1>
-    </div>
-  );
+export function App() {
+    return (
+        <Router>
+            <Switch>
+                <Route path="/browse">
+                    <p>I will be the sign in page</p>
+                </Route>
+                <Route path="/signin">
+                    <p>I will be the sign up page</p>
+                </Route>
+                <Route path="/browse">
+                    <p>I will be the browse page</p>
+                </Route>
+                <Route path="/">
+                    <h1>My clonded Netflix application</h1>
+                </Route>
+            </Switch>
+        </Router>
+    );
 }
-export default App;
