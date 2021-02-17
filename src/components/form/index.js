@@ -1,4 +1,4 @@
-indeimport React from 'react';
+import React from 'react';
 import {
     Container,
     Error,
