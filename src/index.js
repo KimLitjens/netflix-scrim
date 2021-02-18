@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom';
 import { GlobalStyles } from './global-styles';
 import { App } from './app';
 import { FirebaseContext } from './context/firebase';
-// import { FirebaseConfig } from './firebaseConfig';
+import { FirebaseConfig } from './firebaseConfig';
 
 
 
 
-// const firebase = window.firebase.initializeApp(config);
+const firebase = window.firebase.initializeApp(FirebaseConfig);
 
 ReactDOM.render(
     <>
