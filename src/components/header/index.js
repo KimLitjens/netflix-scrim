@@ -4,6 +4,7 @@ import {
     Group,
     Background,
     Link,
+    LogOutLink,
     Text,
     Container,
     Logo,
@@ -63,6 +64,14 @@ Header.Text = function HeaderText({ children, ...restProps }) {
 
 Header.Link = function HeaderLink({ children, ...restProps }) {
     return <Link {...restProps}>{children}</Link>;
+}
+
+Header.LogOutLink = function HeaderLink({ to, children, ...restProps }) {
+    return (
+        <ReachRouterLink to={to}>
+            <Link {...restProps}>{children}</Link>
+        </ReachRouterLink>
+    )
 }
 
 Header.ButtonLink = function HeaderButtonLink({ children, ...restProps }) {

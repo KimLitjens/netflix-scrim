@@ -43,6 +43,21 @@ export const Link = styled.p`
     }
 `;
 
+export const LogOutLink = styled.p`
+    color: #fff;
+    text-decoration: none;
+    margin-right: 30px;
+    font-weight: ${({ active }) => (active === 'true' ? '700' : 'normal')};
+    cursor: pointer;
+    
+    &:hover {
+        font-weight: bold;
+    }
+    &:last-of-type {
+        margin-right: 0;
+    }
+`;
+
 export const ButtonLink = styled(ReachRouterLink)`
     display: block;
     background-color: #e50914;
