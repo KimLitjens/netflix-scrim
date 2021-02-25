@@ -6,10 +6,10 @@ import { FirebaseContext } from './context/firebase';
 import { FirebaseConfig } from './firebaseConfig';
 
 
-
+// import { seedDatabase } from './seed';
 
 const firebase = window.firebase.initializeApp(FirebaseConfig);
-
+// seedDatabase(firebase)
 ReactDOM.render(
     <>
         <FirebaseContext.Provider value={{ firebase: window.firebase }}>
