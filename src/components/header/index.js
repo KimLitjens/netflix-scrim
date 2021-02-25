@@ -69,7 +69,7 @@ Header.Link = function HeaderLink({ children, ...restProps }) {
 Header.LogOutLink = function HeaderLink({ to, children, ...restProps }) {
     return (
         <ReachRouterLink to={to}>
-            <Link {...restProps}>{children}</Link>
+            <LogOutLink {...restProps}>{children}</LogOutLink>
         </ReachRouterLink>
     )
 }

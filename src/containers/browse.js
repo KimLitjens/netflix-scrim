@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react';
-import Fuse from 'fuse.js'
+import Fuse from 'fuse.js';
 import { Card, Loading, Header, Player } from '../components';
 import * as ROUTES from '../constants/routes';
 import { FirebaseContext } from '../context/firebase';
@@ -70,8 +70,8 @@ export function BrowseContainer({ slides }) {
                                     <Header.Link>{user.displayName}</Header.Link>
                                 </Header.Group>
                                 <Header.Group>
-                                    <Header.LogOutLink onClick={() => firebase.auth().signOut()} to={ROUTES.HOME}>
-                                        Sign out</Header.LogOutLink>
+                                    <Header.Link onClick={() => firebase.auth().signOut()}>
+                                        Sign out</Header.Link>
                                 </Header.Group>
                             </Header.Dropdown>
                         </Header.Profile>
